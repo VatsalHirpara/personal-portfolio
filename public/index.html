@@ -224,13 +224,13 @@
 
 <script defer>
     const toggleSwitch = document.getElementById('chk');
+    toggleSwitch.addEventListener('change', switchTheme, false);
     if (localStorage.theme === 'dark') {
         document.documentElement.classList.add('dark')
-        // toggleSwitch.checked = true
+        toggleSwitch.checked = true
     } else {
         document.documentElement.classList.remove('dark')
     }
-    toggleSwitch.addEventListener('change', switchTheme, false);
 
     function switchTheme(e) {
         console.log('inside switchTheme ');

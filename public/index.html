@@ -11,7 +11,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="./theme-toggle.css">
-    <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.ico"/>
+    <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.ico" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 
 <body class="dark:text-th-dark-font dark:bg-th-dark-bg">
@@ -72,7 +73,7 @@
                                 </p>
                             </div>
                             <div>
-                                <p class="text-center md:text-2xl m-2 p-2" id="profession">a Software Developer</p>
+                                <p class="text-center md:text-2xl m-2 p-2" id="profession"></p>
                             </div>
                         </div>
                         <div class="profile-svg flex justify-center">
@@ -254,7 +255,15 @@
             document.documentElement.classList.remove('dark')
         }
     }
-    
 
+    new Typed('#profession', {
+        strings: ['a software developer', 'a problem solver', 'a learner'],
+        // stringsElement: document.getElementById('profession'),
+        loop: true,
+        typeSpeed: 50,
+        contentType: 'html',
+        backDelay: 1000,
+        showCursor:false
+    })
 
 </script>

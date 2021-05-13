@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./theme-toggle.css">
 </head>
 
-<body>
+<body class="dark:text-th-dark-font dark:bg-th-dark-bg">
     <!-- navbar and  small intro-->
     <div class="h-screen flex flex-col ">
         <div class="">
@@ -27,20 +27,21 @@
                         <div
                             class="lg:inline-flex lg:flex-row lg:mr-auto w-full lg:items-center items-start flex flex-col lg:h-auto">
                             <a href="#about-section"
-                                class="mx-5 p-2 rounded-lg hover:bg-purple-200"><span>About</span></a>
+                                class="mx-5 p-2 rounded-lg hover:bg-purple-200 hover:text-black"><span>About</span></a>
                             <!-- <a href="#project_section"
-                                class="mx-5 p-2 rounded-lg hover:bg-purple-200"><span>Projects</span></a> -->
+                                class="mx-5 p-2 rounded-lg hover:bg-purple-200 hover:text-black"><span>Projects</span></a> -->
                             <a href="https://drive.google.com/file/d/1I_FGfaDF4lGR_JZCKZtFibSlqmogW_At/view?usp=sharing"
-                                target="_blank" class="mx-5 p-2 rounded-lg hover:bg-purple-200"><span>Resume</span></a>
-                            <!-- <a href="https://blog.vatsalhirpara.me/" class="mx-5 p-2 rounded-lg hover:bg-purple-200"
+                                target="_blank"
+                                class="mx-5 p-2 rounded-lg hover:bg-purple-200 hover:text-black"><span>Resume</span></a>
+                            <!-- <a href="https://blog.vatsalhirpara.me/" class="mx-5 p-2 rounded-lg hover:bg-purple-200 hover:text-black"
                                 target="_blank"><span>Blog</span></a> -->
                             <a href="#contact_section"
-                                class="mx-5 p-2 rounded-lg hover:bg-purple-200"><span>Contact</span></a>
+                                class="mx-5 p-2 rounded-lg hover:bg-purple-200 hover:text-black"><span>Contact</span></a>
                         </div>
                     </div>
                 </div>
                 <!-- dark mode switch -->
-                <!-- <div>
+                <div>
                     <div class="theme-switcher my-3 lg:mr-8">
                         <ul class="nav-list">
                             <li>
@@ -55,16 +56,15 @@
                             </li>
                         </ul>
                     </div>
-                </div> -->
+                </div>
             </nav>
         </div>
-        <hr class="md:hidden">
         <div class="flex-grow">
             <div class="h-full flex flex-col items-center">
                 <div class="my-auto">
                     <div class="flex flex-col flex-wrap md:flex-row md:justify-between mb-8">
                         <div class="inline-flex flex-col justify-center flex-wrap content-center md:items-center">
-                            <div>
+                            <div class="">
                                 <p class="text-center text-2xl md:text-4xl m-2 px-6"> Hi, I am <span id="name">Vatsal
                                         Hirpara</span>
                                 </p>
@@ -104,11 +104,12 @@
             <h1 class="text-4xl text-center my-6">Work Experience </h1>
             <div class="w-full flex justify-center" id="timeline">
                 <div class="relative w-full m-4 md:w-1/2">
-                    <div class="border-r-2 border-indigo-500 absolute h-full top-0" style="left: 15px"></div>
+                    <div class="border-r-2 border-indigo-500 absolute h-full top-0 dark:border-th-dark-font"
+                        style="left: 15px"></div>
                     <ul class="list-none m-0 p-0">
                         <li class="mb-2">
                             <div class="flex items-center mb-1">
-                                <div class="bg-indigo-500 rounded-full h-8 w-8"></div>
+                                <div class="bg-indigo-500 rounded-full h-8 w-8 dark:bg-th-dark-font"></div>
                                 <div class="flex-1 ml-4 font-medium">Sep 2020 - Present</div>
                             </div>
                             <div class=" mx-2 ml-12"> Nagarro (Frankfurt: NA9)</div>
@@ -122,7 +123,7 @@
                         <br>
                         <li class="mb-2">
                             <div class="flex items-center mb-1">
-                                <div class="bg-indigo-500 rounded-full h-8 w-8"></div>
+                                <div class="bg-indigo-500 rounded-full h-8 w-8 dark:bg-th-dark-font"></div>
                                 <div class="flex-1 ml-4 font-medium">Jan 2020 - Aug 2020</div>
                             </div>
                             <div class=" mx-2 ml-12"> Nagarro (Frankfurt: NA9)</div>
@@ -141,7 +142,7 @@
                         <br>
                         <li class="mb-2 ">
                             <div class="flex items-center mb-1">
-                                <div class="bg-indigo-500 rounded-full h-8 w-8"></div>
+                                <div class="bg-indigo-500 rounded-full h-8 w-8 dark:bg-th-dark-font"></div>
                                 <div class="flex ml-4 font-medium">July 2016- May 2020</div>
                             </div>
                             <div class="font-bold mx-2 ml-12"> <a href="https://www.daiict.ac.in/" class="underline">
@@ -160,15 +161,15 @@
         <div class="flex flex-col my-5 md:w-6/12 md:mx-auto">
             <h1 class="text-4xl text-center my-6">Skills </h1>
             <div class="text-left mx-3 my-6">
-                <p class="text-gray-700">Programming Languages:</p>
+                <p class="text-gray-500 dark:text-gray-400">Programming Languages:</p>
                 <p class="font-bold mb-2">Java, JavaScript</p>
-                <p class="text-gray-700">Frameworks or Technologies:</p>
+                <p class="text-gray-500 dark:text-gray-400">Frameworks or Technologies:</p>
                 <p class="font-bold mb-2">Spring boot, Microservices, Docker</p>
-                <p class="text-gray-700">Databases:</p>
+                <p class="text-gray-500 dark:text-gray-400">Databases:</p>
                 <p class="font-bold mb-2">Postgres</p>
-                <p class="text-gray-700">Version Control:</p>
+                <p class="text-gray-500 dark:text-gray-400">Version Control:</p>
                 <p class="font-bold mb-2">git</p>
-                <p class="text-gray-700">Cloud:</p>
+                <p class="text-gray-500 dark:text-gray-400">Cloud:</p>
                 <p class="font-bold mb-2">AWS ( familiar with Cognito, API gateway, EC2, Lambda)</p>
             </div>
         </div>
@@ -219,5 +220,27 @@
         margin-top: 5px;
     }
 </style>
-
 </html>
+
+<script defer>
+    const toggleSwitch = document.getElementById('chk');
+    if (localStorage.theme === 'dark') {
+        document.documentElement.classList.add('dark')
+        // toggleSwitch.checked = true
+    } else {
+        document.documentElement.classList.remove('dark')
+    }
+    toggleSwitch.addEventListener('change', switchTheme, false);
+
+    function switchTheme(e) {
+        console.log('inside switchTheme ');
+        if (e.target.checked) {
+            localStorage.setItem('theme', 'dark')
+            document.documentElement.classList.add('dark')
+        }
+        else {
+            localStorage.setItem('theme', 'light')
+            document.documentElement.classList.remove('dark')
+        }
+    }
+</script>

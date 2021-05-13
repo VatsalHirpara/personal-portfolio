@@ -1,11 +1,18 @@
+const colors = require('tailwindcss/colors')
 module.exports = {
   purge: {
     enabled: true,
     content: ['./public/**/*.html'],
   },
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'th-dark-bg': '#161625',
+        'th-dark-font':'#e1e1ff',
+        'th-dark-fuchsia':'#f795ac'
+      }
+    },
   },
   variants: {
     extend: {},

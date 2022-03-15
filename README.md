@@ -1,2 +1,2 @@
 # personal-portfolio
-A personal portfolio website. Built using HTML, CSS and Tailwind CSS (under construction) 
+A personal portfolio website. Built using HTML, Tailwind CSS and Vanilla JavaScript (under construction) 

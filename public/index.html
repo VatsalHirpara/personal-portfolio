@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <!-- dark mode switch -->
-                <div>
+                <div hidden>
                     <div class="theme-switcher my-3 lg:mr-8">
                         <ul class="nav-list">
                             <li>
@@ -203,7 +203,7 @@ Admin can take actions on raised ticket. Tech stack: Spring boot, PostgreSQL, An
 
     <section id="contact_section">
         <div class="mx-auto text-center my-10 h-16 pt-10 text-xl">
-            <a href="https://drive.google.com/file/d/1I_FGfaDF4lGR_JZCKZtFibSlqmogW_At/view?usp=sharing" target="_blank"
+            <a href="https://drive.google.com/file/d/1bPTssY99VmwPqv0paKwJAbLNX59Fi1m7/view?usp=sharing" target="_blank"
                 class="underline text-2xl my-4 px-2 py-2 font-bold hover:text-indigo-500 border-2 rounded-3xl">Resume</a>
         </div>
         <br>
@@ -244,6 +244,16 @@ Admin can take actions on raised ticket. Tech stack: Spring boot, PostgreSQL, An
         margin-right: 1em;
         margin-top: 5px;
     }
+
+    [data-theme="dark"] {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #818cab;
+    --name-color: #fc809c;
+    --post-opacity: 1
+}
 </style>
 
 </html>
@@ -271,12 +281,12 @@ Admin can take actions on raised ticket. Tech stack: Spring boot, PostgreSQL, An
     }
 
     new Typed('#profession', {
-        strings: ['a software developer', 'a problem solver', 'a lifelong learner'],
+        strings: ['a software enginner', 'a problem solver', 'a lifelong learner'],
         // stringsElement: document.getElementById('profession'),
         loop: true,
         typeSpeed: 50,
         contentType: 'html',
-        backDelay: 1000,
+        backDelay: 1500,
         showCursor:false
     })
 

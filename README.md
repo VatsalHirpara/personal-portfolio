@@ -3,4 +3,4 @@ A personal portfolio website. Built using HTML, Tailwind CSS and Vanilla JavaScr
 
 
 
-https://vatsalhirpara.github.io/portfolio/
+https://portfolio-vatsal.netlify.app/
